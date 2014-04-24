@@ -14,16 +14,12 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        float a;
-        float b;
-        float i;
-        a = 5.2;
-        b = 2.7;
-        i = a / b;
-        // what is i?
 
-        NSLog(@"i= %f",i);
+        int num = getIntegerFromConsole(@"Enter a number:");
         
+        if (num < 10) NSLog(@"%d is small.", num);
+        else if (num > 100) NSLog(@"%d is large.", num);
+        else NSLog(@"%d is medium", num);
     }
     return 0;
 }
