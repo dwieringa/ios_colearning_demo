@@ -14,15 +14,15 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        int num = getIntegerFromConsole(@"Enter an integer");
-        NSLog(@"sin(%d)=%f",num,sin(num));
-        NSString *name = @"Imp";
-        float height = 3.43;
-        int age = 4000;
-        NSLog(@"I saw a %@ that was %f feet tall and %d years old", name, sin(height), age);
+        float a;
+        float b;
+        float i;
+        a = 5.2;
+        b = 2.7;
+        i = a / b;
+        // what is i?
 
-        NSLog(@"3 + 2.3 = %f",(3 + 2.3));
-        NSLog(@"Hello, World!");
+        NSLog(@"i= %f",i);
         
     }
     return 0;
