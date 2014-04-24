@@ -7,13 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <math.h>
+#import "console.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
-        // insert code here...
+        int num = getIntegerFromConsole(@"Enter an integer");
+        NSLog(@"sin(%d)=%f",num,sin(num));
+        NSString *name = @"Imp";
+        float height = 3.43;
+        int age = 4000;
+        NSLog(@"I saw a %@ that was %f feet tall and %d years old", name, sin(height), age);
+
         NSLog(@"Hello, World!");
         
     }
